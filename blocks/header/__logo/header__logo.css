@@ -1,0 +1,17 @@
+.header__logo {
+    width: 142px;
+    height: 33px;
+    object-fit: cover;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    z-index: 8;
+}
+
+@media screen and (max-width: 728px) {
+    .header__logo {
+        width: 103.74px;
+        height: 24.4px;
+        padding-left: 8px;
+    }
+}

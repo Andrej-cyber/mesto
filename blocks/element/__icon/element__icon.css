@@ -1,0 +1,10 @@
+.element__icon {
+    color: #000000;
+    width: 22px;
+    height: 19px;
+    bottom: 30px;
+    right: 20px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
