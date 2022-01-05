@@ -2,4 +2,9 @@
     width: 22px;
     height: 22px;
     align-self: center;
+    transition: opacity 1s ease;
+}
+
+.profile__add-button_vector:hover {
+    opacity: .6;
 }

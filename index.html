@@ -23,7 +23,6 @@
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
                         <a href="#" class="profile__edit-button"></a>
                     </div>
-
                     <p class="profile__status">Исследователь океана</p>
                 </div>
                 <a href="#" class="profile__add-button">
@@ -34,33 +33,47 @@
                 <ul class="elements__container container">
                     <li class="element">
                         <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__image" />
-                        <h2 class="element__title">Карачаевск</h2>
-                        <img src="/images/hart.svg" alt="" class="element__icon element__icon_active" />
+                        <div class="element__title-section">
+                            <h2 class="element__title">Карачаевск</h2>
+                            <div class="element__icon"></div>
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="/images/kirill-pershin-1404681-unsplash.jpg" alt="" class="element__image" />
-                        <h2 class="element__title">Гора Эльбрус</h2>
-                        <img src="/images/hart.svg" alt="" class="element__icon element__icon_active" />
+                        <img src="/images/kirill-pershin-1404681-unsplash.jpg " alt=" " class="element__image" />
+
+                        <div class="element__title-section">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+
+                            <div class="element__icon"></div>
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="/images/kirill-pershin-1556355-unsplash.jpg" alt="" class="element__image" />
-                        <h2 class="element__title">Домбай</h2>
-                        <img src="/images/hart.svg" alt="" class="element__icon element__icon_active" />
+                        <img src="/images/kirill-pershin-1556355-unsplash.jpg " alt=" " class="element__image" />
+                        <div class="element__title-section">
+                            <h2 class="element__title">Домбай</h2>
+                            <div class="element__icon"></div>
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="/images/kirill-pershin-1404681-unsplash.jpg" alt="" class="element__image" />
-                        <h2 class="element__title">Гора Эльбрус</h2>
-                        <img src="/images/hart.svg" alt="" class="element__icon element__icon_active" />
+                        <img src="/images/kirill-pershin-1404681-unsplash.jpg " alt=" " class="element__image" />
+                        <div class="element__title-section">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+                            <div class="element__icon"></div>
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="/images/kirill-pershin-1556355-unsplash.jpg" alt="" class="element__image" />
-                        <h2 class="element__title">Домбай</h2>
-                        <img src="/images/hart.svg" alt="" class="element__icon element__icon_active" />
+                        <img src="/images/kirill-pershin-1556355-unsplash.jpg " alt=" " class="element__image" />
+                        <div class="element__title-section">
+                            <h2 class="element__title">Домбай</h2>
+                            <div class="element__icon"></div>
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="/images/kirill-pershin-1088404-unsplash.jpg" alt="" class="element__image" />
-                        <h2 class="element__title">Карачаево-Ч...</h2>
-                        <img src="/images/hart.svg" alt="" class="element__icon element__icon_active" />
+                        <img src="/images/kirill-pershin-1088404-unsplash.jpg " alt=" " class="element__image" />
+                        <div class="element__title-section">
+                            <h2 class="element__title">Карачаево-Ч...</h2>
+                            <div class="element__icon"></div>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -68,8 +81,17 @@
         <footer class="footer footer__container container">
             <p class="footer__author">&copy; 2021. Mesto Russia</p>
         </footer>
+        <section class="popup">
+            <fieldset class="popup__container">
+                <button class="popup__close-button"></button>
+                <label class="popup__title">Редактировать профиль</label>
+                <input class="popup__text" id="input-name" type="text" placeholder="Жак-Ив Кусто"></input>
+                <input class="popup__text" id="input-job" type="text" placeholder="Исследователь океана"></input>
+                <button class="popup__submit-button">Сохранить</button>
+            </fieldset>
+        </section>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
