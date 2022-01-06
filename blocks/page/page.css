@@ -7,11 +7,10 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px red solid;
 }
 
 @media screen and (max-width: 728px) {
     .page {
-        padding: 28px 19px 36px;
+        padding: 28px 0px 36px;
     }
 }

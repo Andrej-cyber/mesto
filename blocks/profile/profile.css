@@ -5,12 +5,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px red solid;
     padding: 0;
 }
 
 @media screen and (max-width: 728px) {
     .profile {
         margin: 42px auto 36px;
+        flex-direction: column;
+        max-width: 282px;
     }
 }
