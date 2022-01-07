@@ -9,12 +9,12 @@
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
 @import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__info-edit-section/profile__info-edit-section.css);
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__edit-button/profile__edit-button.css);
 @import url(../blocks/profile/__status/profile__status.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
-@import url(../blocks/profile/__info/_edit-section/profile__info_edit-section.css);
-@import url(../blocks/profile/__add-button/_vector/profile__add-button_vector.css);
+@import url(../blocks/profile/__add-button-vector/profile__add-button-vector.css);
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/element/element.css);
 @import url(../blocks/element/__title-section/element__title-section.css);
