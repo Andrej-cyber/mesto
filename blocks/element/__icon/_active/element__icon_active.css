@@ -1,3 +1,9 @@
 .element__icon_active {
-    background-color: #000000;
+    background-image: url(../../../../images/hart-active.svg);
+    color: #000000;
+    transition: opacity ease;
+}
+
+.element__icon_active:hover {
+    opacity: 1;
 }

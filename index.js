@@ -45,3 +45,14 @@ function formSubmitHandler(evt) {
 }
 
 formElement.addEventListener('submit', formSubmitHandler);
+
+
+const elementIcon = document.querySelectorAll('.element__icon');
+
+
+elementIcon.forEach((item) => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.target.classList.toggle('element__icon_active');
+    });
+});

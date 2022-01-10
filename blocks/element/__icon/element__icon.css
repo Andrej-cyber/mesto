@@ -5,8 +5,10 @@
     margin: 5px 0 auto 0;
     padding: 0;
     background-image: url(../../../images/hart.svg);
+    transition: opacity 1s ease;
 }
 
 .element__icon:hover {
     cursor: pointer;
+    opacity: .4;
 }
