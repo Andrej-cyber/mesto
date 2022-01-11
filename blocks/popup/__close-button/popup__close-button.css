@@ -1,27 +1,41 @@
-.popup__close-button {
-    background-image: url(../../../images/Close-edit-Icon.svg);
-    width: 32px;
-    height: 32px;
-    background-color: rgba(0, 0, 0, 0);
-    position: inherit;
-    border: 0;
-    margin-top: -40px;
-    margin-right: -470px;
-    transition: opacity 1s ease;
-    padding: 0;
-}
-
-.popup__close-button:hover {
-    opacity: .6;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 728px) {
     .popup__close-button {
-        background-image: url(../../../images/Close-Icon-mobil.svg);
-        width: 20px;
-        height: 20px;
-        margin-top: -36px;
-        margin-right: -263px;
+        background-image: url(../../../images/Close-edit-Icon.svg);
+        width: 32px;
+        height: 32px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        border: 0;
+        top: 155px;
+        right: 385px;
+        transition: opacity 1s ease;
+        padding: 0;
+        margin: 0;
     }
-}
+    
+    .popup__close-button:hover {
+        opacity: .6;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 1248px) {
+        .popup__close-button {
+            top: 100px;
+            right: 325px;
+        }
+    }
+    
+    @media screen and (max-width: 728px) {
+        .popup__close-button {
+            background-image: url(../../../images/Close-Icon-mobil.svg);
+            width: 20px;
+            height: 20px;
+            top: 100px;
+            right: 125px;
+        }
+    }
+    
+    @media screen and (max-width: 528px) {
+        .popup__close-button {
+            right: 19px;
+        }
+    }
