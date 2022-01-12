@@ -2,12 +2,12 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: rgba(0, 0, 0, 1);
         width: 358px;
         min-height: 27px;
         border: 1px solid rgba(0, 0, 0, 0);
