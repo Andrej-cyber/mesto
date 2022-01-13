@@ -10,6 +10,11 @@
     margin-left: 0;
     margin-bottom: 8px;
     padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 294px;
 }
 
 @media screen and (max-width: 728px) {
@@ -20,5 +25,6 @@
         margin-right: 10px;
         margin-bottom: 0px;
         margin-left: 46px;
+        width: 189px;
     }
 }
