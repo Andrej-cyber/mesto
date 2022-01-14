@@ -1,5 +1,5 @@
-button {
-    border: none;
+.button {
+    border: 0;
     background-color: transparent;
     padding: 0;
     font: inherit;

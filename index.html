@@ -20,17 +20,11 @@
                 <div class="profile__info">
                     <div class="profile__info-edit-section">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button type="button" class="profile__edit-button"></button>
+                        <button type="button" class="profile__edit-button button"></button>
                     </div>
                     <p class="profile__status">Исследователь океана</p>
                 </div>
-                <button type="button" class="profile__add-button">
-            <img
-              src="./images/add-button-icon.svg"
-              alt=""
-              class="profile__add-button-vector"
-            />
-          </button>
+                <button type="button" class="profile__add-button button"></button>
             </section>
             <section class="elements">
                 <ul class="elements__container container">
@@ -38,7 +32,7 @@
                         <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="монастырь в горах" class="element__image" />
                         <div class="element__title-section">
                             <h2 class="element__title">Карачаевск</h2>
-                            <button type="button" class="element__icon"></button>
+                            <button type="button" class="element__icon button"></button>
                         </div>
                     </li>
                     <li class="element">
@@ -46,35 +40,35 @@
 
                         <div class="element__title-section">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <button type="button" class="element__icon"></button>
+                            <button type="button" class="element__icon button"></button>
                         </div>
                     </li>
                     <li class="element">
                         <img src="./images/kirill-pershin-1556355-unsplash.jpg " alt="горы" class="element__image" />
                         <div class="element__title-section">
                             <h2 class="element__title">Домбай</h2>
-                            <button type="button" class="element__icon"></button>
+                            <button type="button" class="element__icon button"></button>
                         </div>
                     </li>
                     <li class="element">
                         <img src="./images/kirill-pershin-1404681-unsplash.jpg " alt="горы" class="element__image" />
                         <div class="element__title-section">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <button type="button" class="element__icon"></button>
+                            <button type="button" class="element__icon button"></button>
                         </div>
                     </li>
                     <li class="element">
                         <img src="./images/kirill-pershin-1556355-unsplash.jpg " alt="горы" class="element__image" />
                         <div class="element__title-section">
                             <h2 class="element__title">Домбай</h2>
-                            <button type="button" class="element__icon"></button>
+                            <button type="button" class="element__icon button"></button>
                         </div>
                     </li>
                     <li class="element">
                         <img src="./images/kirill-pershin-1088404-unsplash.jpg " alt="монастырь в горах" class="element__image" />
                         <div class="element__title-section">
                             <h2 class="element__title">Карачаево-Черкесия</h2>
-                            <button type="button" class="element__icon"></button>
+                            <button type="button" class="element__icon button"></button>
                         </div>
                     </li>
                 </ul>
@@ -84,12 +78,14 @@
             <p class="footer__author">&copy; 2021. Mesto Russia</p>
         </footer>
         <section class="popup">
-            <form class="popup__container">
-                <button type="button" class="popup__close-button" aria-label="Close" onclick="myDialog.close()"></button>
+            <form class="popup__container" name="myname">
+                <button type="button" class="popup__close-button button" aria-label="Close"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <input class="popup__text" id="input-name" type="text" name="eman" placeholder="Жак-Ив Кусто" />
                 <input class="popup__text" id="input-job" type="text" name="emaname" placeholder="Исследователь океана" />
-                <button class="popup__submit-button" type="submit">Сохранить</button>
+                <button class="popup__submit-button button" type="submit">
+            Сохранить
+          </button>
             </form>
         </section>
     </div>

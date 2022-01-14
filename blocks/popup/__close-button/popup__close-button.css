@@ -4,9 +4,8 @@
         height: 32px;
         background-color: rgba(0, 0, 0, 0);
         position: absolute;
-        border: 0;
-        top: 155px;
-        right: 385px;
+        top: -40px;
+        right: -40px;
         transition: opacity 1s ease;
         padding: 0;
         margin: 0;
@@ -17,25 +16,12 @@
         cursor: pointer;
     }
     
-    @media screen and (max-width: 1248px) {
-        .popup__close-button {
-            top: 100px;
-            right: 325px;
-        }
-    }
-    
     @media screen and (max-width: 728px) {
         .popup__close-button {
             background-image: url(../../../images/Close-Icon-mobil.svg);
             width: 20px;
             height: 20px;
-            top: 100px;
-            right: 125px;
-        }
-    }
-    
-    @media screen and (max-width: 528px) {
-        .popup__close-button {
-            right: 19px;
+            top: -32px;
+            right: 0px;
         }
     }
