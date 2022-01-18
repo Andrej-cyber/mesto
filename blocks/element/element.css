@@ -1,7 +1,8 @@
 .element {
+    position: relative;
     list-style-type: none;
     padding: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
