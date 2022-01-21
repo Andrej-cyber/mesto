@@ -1,3 +1,4 @@
+
 const editButton = document.querySelector('.profile__edit-button');
 const closeButton = document.querySelector('.popup__close-button');
 const popUp = document.querySelector('.popup');
@@ -19,10 +20,14 @@ let elementTitle = document.querySelectorAll('.element__title');
 let elementImage = document.querySelectorAll('.element__image');
 let formSubmitPictureElement = document.querySelector('.popup__add-pic-container');
 const submitPictureButton = document.querySelector('.popup__submit-pic-button');
+// --------------------------popup-cards--------------
+const popupCards = document.querySelector('.popup__cards');
+const popupCardsContainer = document.querySelector('.popup__cards-container');
+const popupCardsCloseBtn = document.querySelector('.popup__close-cards-button');
+let popupCardImg = document.querySelector('.popup__card-img');
+let popupCardTitle = document.querySelector('.popup__card-title');
 // -------------------------popup------------------------
 
-
-console.log({ formSubmitPictureElement });
 
 
 
@@ -35,6 +40,7 @@ function openPopup() {
 function closePopup() {
     popUp.classList.remove(popupOpenedClass);
 };
+
 
 function formSubmitHandler(evt) {
     evt.preventDefault();
@@ -54,13 +60,30 @@ function closePopupAddPicture() {
     popUpAddPic.classList.remove(popupOpenedClass);
 };
 
+
+
 function formSubmitPictureHandler(evt) {
     evt.preventDefault();
     pictureNameInput.textContent = elementTitle.value;
     pictureLinkInput.textContent = elementImage.value;
     closePopupAddPicture();
 };
+// ----------------------popup Image-----------------------------
+
+function openPopupImage() {
+    popupCards.classList.add(popupOpenedClass);
+
+}
+function closePopupImage() {
+    popupCards.classList.remove(popupOpenedClass);
+
+}
+elementImage.forEach((item) => {
+    item.addEventListener('click', openPopupImage);
+});
+popupCardsCloseBtn.addEventListener('click', closePopupImage);
 // ----------------------EventListeners--------------------------
+
 addButton.addEventListener('click', openPopupAddPicture);
 closePopupAddButton.addEventListener('click', closePopupAddPicture);
 editButton.addEventListener('click', openPopup);
@@ -78,3 +101,6 @@ elementIcon.forEach((item) => {
         e.target.classList.toggle('element__icon_active');
     });
 });
+
+
+

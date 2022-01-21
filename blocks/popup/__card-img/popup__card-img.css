@@ -1,0 +1,10 @@
+.popup__card-img {
+    max-width: 75vw;
+    max-height: 75vh;
+    object-fit: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+    z-index: 9;
+}
