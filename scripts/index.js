@@ -29,19 +29,14 @@ let popupCardTitle = document.querySelector('.popup__card-title');
 // -------------------------popup------------------------
 
 
-
-
 function openPopup() {
     popUp.classList.add(popupOpenedClass);
     nameInput.value = profileName.textContent;
     jobInput.value = profileStatus.textContent;
 };
-
 function closePopup() {
     popUp.classList.remove(popupOpenedClass);
 };
-
-
 function formSubmitHandler(evt) {
     evt.preventDefault();
     profileName.textContent = nameInput.value;
@@ -73,14 +68,17 @@ function formSubmitPictureHandler(evt) {
 function openPopupImage() {
     popupCards.classList.add(popupOpenedClass);
 
-}
+};
+
 function closePopupImage() {
     popupCards.classList.remove(popupOpenedClass);
+};
 
-}
 elementImage.forEach((item) => {
     item.addEventListener('click', openPopupImage);
 });
+
+
 popupCardsCloseBtn.addEventListener('click', closePopupImage);
 // ----------------------EventListeners--------------------------
 
