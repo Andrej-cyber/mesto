@@ -27,58 +27,7 @@
                 <button type="button" class="profile__add-button button"></button>
             </section>
             <section class="elements">
-                <ul class="elements__container container">
-                    <li class="element">
-                        <button class="element__icon-bin button"></button>
-                        <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="монастырь в горах"
-                            class="element__image" />
-                        <div class="element__title-section">
-                            <h2 class="element__title">Карачаевск</h2>
-                            <button type="button" class="element__icon button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <button class="element__icon-bin button"></button>
-                        <img src="./images/kirill-pershin-1404681-unsplash.jpg " alt="горы" class="element__image" />
-                        <div class="element__title-section">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button type="button" class="element__icon button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <button class="element__icon-bin button"></button>
-                        <img src="./images/kirill-pershin-1556355-unsplash.jpg " alt="горы" class="element__image" />
-                        <div class="element__title-section">
-                            <h2 class="element__title">Домбай</h2>
-                            <button type="button" class="element__icon button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <button class="element__icon-bin button"></button>
-                        <img src="./images/kirill-pershin-1404681-unsplash.jpg " alt="горы" class="element__image" />
-                        <div class="element__title-section">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button type="button" class="element__icon button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <button class="element__icon-bin button"></button>
-                        <img src="./images/kirill-pershin-1556355-unsplash.jpg " alt="горы" class="element__image" />
-                        <div class="element__title-section">
-                            <h2 class="element__title">Домбай</h2>
-                            <button type="button" class="element__icon button"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <button class="element__icon-bin button"></button>
-                        <img src="./images/kirill-pershin-1088404-unsplash.jpg " alt="монастырь в горах"
-                            class="element__image" />
-                        <div class="element__title-section">
-                            <h2 class="element__title">Карачаево-Черкесия</h2>
-                            <button type="button" class="element__icon button"></button>
-                        </div>
-                    </li>
-                </ul>
+                <ul class="elements__container container"></ul>
             </section>
         </main>
         <footer class="footer container">
@@ -117,7 +66,17 @@
             </div>
         </section>
     </div>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js" defer></script>
+    <template id="elements-template" class="elements-template">
+        <li class="element">
+            <button class="element__icon-bin button"></button>
+            <div class="element__image"></div>
+            <div class="element__title-section">
+                <h2 class="element__title"></h2>
+                <button type="button" class="element__icon button"></button>
+            </div>
+        </li>
+    </template>
 </body>
 
 </html>
