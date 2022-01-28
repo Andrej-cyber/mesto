@@ -1,14 +1,6 @@
-.popup__card-title {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    color: #ffffff;
-    width: 291px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+.popup__card-img {
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 0;
     padding: 0;
-    margin: 10px 0px 0px 0px;
 }
