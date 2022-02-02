@@ -33,44 +33,46 @@
         <footer class="footer container">
             <p class="footer__author">&copy; 2021. Mesto Russia</p>
         </footer>
-        <section class="popup" id="popup-profile">
-            <form class="popup__container" name="myname1">
+        <section class="popup popup_type_profile">
+            <form class="popup__container popup__container_type_profile" name="ProfileForm">
                 <button type="button" class="popup__close-button button" aria-label="Close"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <input class="popup__text" id="input-name" type="text" name="eman" placeholder="Жак-Ив Кусто" />
-                <input class="popup__text" id="input-job" type="text" name="emaname"
+                <input class="popup__text" id="input-name" type="text" name="inputProfileName"
+                    placeholder="Жак-Ив Кусто" />
+                <input class="popup__text" id="input-job" type="text" name="inputProfileJob"
                     placeholder="Исследователь океана" />
                 <button class="popup__submit-button button" type="submit">
                     Сохранить
                 </button>
             </form>
         </section>
-        <section class="popup" id="popup-addImg">
-            <form class="popup__container" name="myname2">
-                <button type="button" class="popup__close-button popup__close-button-add-pic button"
-                    aria-label="Close"></button>
+        <section class="popup popup_type_card-add">
+            <form class="popup__container popup__container_type_add-img" name="addPicForm">
+                <button type="button" class="popup__close-button button" aria-label="Close"></button>
                 <h2 class="popup__title">Новое место</h2>
-                <input class="popup__text" id="input-pic-name" type="text" name="eman2" placeholder="Название" />
-                <input class="popup__text" id="input-pic-link" type="text" name="emaname2"
+                <input class="popup__text" id="input-pic-name" type="text" name="inputAddPic-name"
+                    placeholder="Название" />
+                <input class="popup__text" id="input-pic-link" type="text" name="inputAddPic-link"
                     placeholder="Ссылка на картинку" />
-                <button class="popup__submit-button popup__submit-pic-button button" type="submit">
+                <button class="popup__submit-button popup__submit-button_type_add-img button" type="submit">
                     Создать
                 </button>
             </form>
         </section>
-        <section class="popup" id="popup-cards">
+        <section class="popup popup_type_picture">
             <div class="popup__cards-container">
-                <img src="/scripts/index.js" alt="Вид на имидж" class="popup__card-img">
+                <img src="/scripts/index.js" alt="" class="popup__card-img">
                 <h3 class="popup__card-title"></h3>
-                <button type="button" class="popup__close-button popup__close-cards-button button"></button>
+                <button type="button" class="popup__close-button button"></button>
             </div>
         </section>
     </div>
+    <script src="scripts/cards.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <template id="elements-template">
         <li class="element">
             <button class="element__icon-bin button"></button>
-            <img src="/scripts/index.js" alt="Вид на имидж" id="image" class="element__image">
+            <img src="/scripts/index.js" alt="" class="element__image">
             <div class="element__title-section">
                 <h2 class="element__title"></h2>
                 <button type="button" class="element__icon button"></button>
