@@ -44,19 +44,6 @@ function openPopupAddImg() {
 function closePopupAddImg() {
     closePopup(popUpAddImg);
 };
-// ---------------------------------------Close Popup I----------------------
-// const popupCloseButton = document.querySelectorAll('.popup__close-button');
-// if (popupCloseButton.length > 0) {
-//     for (let i = 0; i < popupCloseButton.length; i++) {
-//         const btn = popupCloseButton[i];
-//         btn.addEventListener('click', function (e) {
-//             e.preventDefault();
-//             closePopup(btn.closest('.popup'));
-//         });
-//     }
-// }
-// -----------------------------------------Close Popup II ----------------------------------
-// Благодаря такой реализации на следующем спринте будет проще реализовать дополнительный функционал, дописав еще одно условие.
 
 const popupList = Array.from(document.querySelectorAll('.popup'));
 popupList.forEach((popup) => {
@@ -64,10 +51,16 @@ popupList.forEach((popup) => {
         if (event.target.classList.contains('popup__close-button')) {
             closePopup(popup);
         }
+        if (event.target.classList.contains('popup')) {
+            closePopup(popup);
+        }
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closePopup(popup);
+        }
     });
 });
-// ------------------------------------------------------------------------------------
-
 
 const getElement = ({ link, name }) => {
     const element = elementsTemplate.cloneNode(true);
