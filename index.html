@@ -33,28 +33,33 @@
         <footer class="footer container">
             <p class="footer__author">&copy; 2021. Mesto Russia</p>
         </footer>
-        <section class="popup popup_type_form popup_type_profile">
+        <section class="popup popup_type_profile">
             <form class="popup__container popup__container_type_profile" name="ProfileForm" novalidate>
                 <button type="button" class="popup__close-button button" aria-label="Close"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <input required minlength="2" maxlength="40" class="popup__text popup__text_type_name" id="input-name"
                     type="text" name="inputProfileName" placeholder="Жак-Ив Кусто" />
+                <span id="input-name-error" class="error"></span>
                 <input required minlength="2" maxlength="200" class="popup__text popup__text_type_job" id="input-job"
                     type="text" name="inputProfileJob" placeholder="Исследователь океана" />
+                <span id="input-job-error" class="error"></span>
                 <button class="popup__submit-button button" type="submit">
                     Сохранить
                 </button>
             </form>
         </section>
-        <section class="popup popup_type_form popup_type_card-add">
+        <section class="popup popup_type_card-add">
             <form class="popup__container popup__container_type_add-img" name="addPicForm" novalidate>
                 <button type="button" class="popup__close-button button" aria-label="Close">
                 </button>
                 <h2 class="popup__title">Новое место</h2>
                 <input required minlength="2" maxlength="30" class="popup__text popup__text_type_card-name"
-                    id="input-pic-name" type="text" name="inputAddPic-name" placeholder="Название" />
+                    id="input-pic-name" type="text" name="inputAddPic-name" placeholder="Название"
+                    data-error="Ошибка при заполнении поля name" />
+                <span id="input-pic-name-error" class="error"></span>
                 <input required class="popup__text popup__text_type_card-link" id="input-pic-link" type="url"
                     name="inputAddPic-link" placeholder="Ссылка на картинку" />
+                <span id="input-pic-link-error" class="error"></span>
                 <button class="popup__submit-button popup__submit-button_type_add-img button" type="submit">
                     Создать
                 </button>
@@ -68,7 +73,7 @@
             </div>
         </section>
     </div>
-    <script src="scripts/validate.js" defer></script>
+    <script type="module" src="scripts/validate.js" defer></script>
     <script src="scripts/cards.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <template id="elements-template">
