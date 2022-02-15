@@ -14,7 +14,7 @@ const addElementForm = document.querySelector('.popup__container_type_add-img');
 const pictureNameInput = document.querySelector('.popup__text_type_card-name');
 const pictureLinkInput = document.querySelector('.popup__text_type_card-link');
 const elementsTemplate = document.querySelector('#elements-template').content.querySelector('.element');
-console.log(editButton);
+
 
 
 function openPopup(popupWindow) {
