@@ -1,3 +1,4 @@
+
 const editButton = document.querySelector('.profile__edit-button');
 const popupOpenedClass = 'popup_opened';
 const formElement = document.querySelector('.popup__container_type_profile');
@@ -13,6 +14,7 @@ const addElementForm = document.querySelector('.popup__container_type_add-img');
 const pictureNameInput = document.querySelector('.popup__text_type_card-name');
 const pictureLinkInput = document.querySelector('.popup__text_type_card-link');
 const elementsTemplate = document.querySelector('#elements-template').content.querySelector('.element');
+console.log(editButton);
 
 
 function openPopup(popupWindow) {
@@ -122,6 +124,7 @@ const handleElementFormSubmit = (e) => {
 initialCards.forEach(item => {
     renderElement(item, elementContainer);
 });
+
 
 addElementForm.addEventListener('submit', handleElementFormSubmit);
 editButton.addEventListener('click', openProfilepopup);

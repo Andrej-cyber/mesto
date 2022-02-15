@@ -42,11 +42,12 @@ function handleField(form, input, config) {
 function showError(form, input, config) {
     input.classList.add(config.inputErrorClass)
 
+
     const errorElement = form.querySelector(`#${input.id}-error`)
     errorElement.classList.add(config.errorClass)
 
     errorElement.textContent = input.validationMessage
-}
+};
 
 function hideError(form, input, config) {
     input.classList.remove(config.inputErrorClass)
@@ -54,7 +55,7 @@ function hideError(form, input, config) {
     errorElement.classList.remove(config.errorClass)
 
     errorElement.textContent = '';
-}
+};
 
 function setSubmitButtonState(form, config) {
     const button = form.querySelector(config.submitButtonSelector)
@@ -62,6 +63,6 @@ function setSubmitButtonState(form, config) {
     button.disabled = !form.checkValidity()
     button.classList.toggle(config.submitButtonErrorClass, !form.checkValidity());
 
-}
+};
 
 enableValidation(formsValidationConfig);
