@@ -1,4 +1,3 @@
-
 const editButton = document.querySelector('.profile__edit-button');
 const popupOpenedClass = 'popup_opened';
 const formElement = document.querySelector('.popup__container_type_profile');
@@ -16,9 +15,9 @@ const pictureLinkInput = document.querySelector('.popup__text_type_card-link');
 const elementsTemplate = document.querySelector('#elements-template').content.querySelector('.element');
 
 
-
 function openPopup(popupWindow) {
     popupWindow.classList.add(popupOpenedClass);
+
 };
 
 function closePopup(popupWindow) {
@@ -29,7 +28,6 @@ function openProfilepopup() {
     nameInput.value = profileName.textContent;
     jobInput.value = profileStatus.textContent;
     openPopup(profilePopup);
-
 };
 
 function profileFormSubmitHandler(evt) {
@@ -43,7 +41,6 @@ function openPopupAddImg() {
     pictureNameInput.value = pictureNameInput.textContent;
     pictureLinkInput.value = pictureLinkInput.textContent;
     openPopup(popUpAddImg);
-
 };
 
 function closePopupAddImg() {
@@ -91,6 +88,7 @@ const getElement = ({ link, name }) => {
         popupCardTitle.textContent = name;
         popupCardImg.alt = name;
         openPopup(popupCards);
+
     };
 
     return element;
@@ -130,7 +128,6 @@ addElementForm.addEventListener('submit', handleElementFormSubmit);
 editButton.addEventListener('click', openProfilepopup);
 addButton.addEventListener('click', openPopupAddImg);
 formElement.addEventListener('submit', profileFormSubmitHandler);
-
 
 
 

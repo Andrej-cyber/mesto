@@ -13,7 +13,6 @@ function enableValidation(data) {
     forms.forEach(form => addFormListeners(form, data))
 };
 
-
 function addFormListeners(form, config) {
 
     form.addEventListener('submit', handleSubmit)
