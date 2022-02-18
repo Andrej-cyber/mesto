@@ -1,6 +1,6 @@
 const editButton = document.querySelector('.profile__edit-button');
 const popupOpenedClass = 'popup_opened';
-const formElement = document.querySelector('.popup__container_type_profile');
+const formProfileElement = document.querySelector('.popup__container_type_profile');
 const nameInput = document.querySelector('.popup__text_type_name');
 const jobInput = document.querySelector('.popup__text_type_job');
 const profileName = document.querySelector('.profile__name');
@@ -13,15 +13,16 @@ const addElementForm = document.querySelector('.popup__container_type_add-img');
 const pictureNameInput = document.querySelector('.popup__text_type_card-name');
 const pictureLinkInput = document.querySelector('.popup__text_type_card-link');
 const elementsTemplate = document.querySelector('#elements-template').content.querySelector('.element');
-
+const ESC_CODE = 'Escape';
 
 function openPopup(popupWindow) {
     popupWindow.classList.add(popupOpenedClass);
-
+    document.addEventListener('keydown', closeByEsc)
 };
 
 function closePopup(popupWindow) {
     popupWindow.classList.remove(popupOpenedClass);
+    document.removeEventListener('keydown', closeByEsc)
 };
 
 function openProfilepopup() {
@@ -57,12 +58,14 @@ popupList.forEach((popup) => {
             closePopup(popup);
         }
     });
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-            closePopup(popup);
-        }
-    });
 });
+function closeByEsc(evt) {
+    if (evt.key === ESC_CODE) {
+        const openedPopup = document.querySelector('.popup_opened');
+        closePopup(openedPopup);
+    }
+};
+
 
 const getElement = ({ link, name }) => {
     const element = elementsTemplate.cloneNode(true);
@@ -81,14 +84,13 @@ const getElement = ({ link, name }) => {
 
     element.querySelector('.element__image').src = link;
     element.querySelector('.element__title').textContent = name;
-    element.querySelector('.element__image').alt = name;
+    elementImages.alt = name;
 
     function openPopupImage() {
         popupCardImg.src = link;
         popupCardTitle.textContent = name;
         popupCardImg.alt = name;
         openPopup(popupCards);
-
     };
 
     return element;
@@ -117,17 +119,17 @@ const handleElementFormSubmit = (e) => {
 
     renderElement(element, elementContainer);
     closePopupAddImg();
+    document.querySelector('.popup__submit-button_type_add-img').disabled = true;
 };
 
 initialCards.forEach(item => {
     renderElement(item, elementContainer);
 });
 
-
 addElementForm.addEventListener('submit', handleElementFormSubmit);
 editButton.addEventListener('click', openProfilepopup);
 addButton.addEventListener('click', openPopupAddImg);
-formElement.addEventListener('submit', profileFormSubmitHandler);
+formProfileElement.addEventListener('submit', profileFormSubmitHandler);
 
 
 

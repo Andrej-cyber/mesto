@@ -16,6 +16,10 @@
     margin-bottom: 37px;
     display: block;
 }
+.popup__submit-button:disabled {
+    background: #e5e5e5;
+    color: rgba(0, 0, 0, 0.15);
+}
 
 .popup__submit-button:hover {
     opacity: 0.8;
